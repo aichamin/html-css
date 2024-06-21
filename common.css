@@ -1,0 +1,243 @@
+* {
+  margin: unset;
+  padding: unset;
+}
+/*.はじまりはhtmlでclass="header"を指定*/
+ 
+main {
+  margin: unset;
+  padding: unset;
+}
+
+/*.はじまりはhtmlでclass="header"を指定*/
+ 
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 16px;
+}
+main-title {
+  margin: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+ 
+.main-text {
+  margin: 0 20px;
+  font-size: 16px;
+}
+.content-item {
+  margin: 16px;
+  padding: 16px;
+  border: 2px solid #000;
+  background-color: #f5f5f5;
+}
+.content-item-title {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #000;
+  color: #fff;
+  padding: 8px;
+}
+ 
+.content-item-text {
+  font-size: 16px;
+  margin: 16px;
+}
+.content-child-item {
+  margin: 16px;
+  border: 2px solid #000000;
+  padding: 30px;
+}
+.content-child-item-title {
+  font-size: 16px;
+}
+.menu {
+  margin: 16px;
+  display: flex;
+ 
+  gap: 8px;
+}
+ 
+.menu-list {
+  list-style-type: none;
+}
+/*list-style-type 箇条書きの点をnoneでなくせる*/
+.menu-list a {
+  padding: 16px;
+ 
+  display: block;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  min-width: 160px;
+  text-align: center;
+}
+ 
+.menu-list a:hover {
+  background-color: #666;
+}
+.box1 {
+  margin: 10px;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border: 20px solid yellow;
+}
+ 
+.box2 {
+  margin: 10px;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border: 20px solid yellow;
+ 
+  box-sizing: border-box;
+}
+/*
+☆paddingとmarginには色がつかない
+☆わからなくなったら開発者モードみる*/
+/*borderのなかpadding内側、margin外側につく*/
+ 
+.entry {
+  max-width: 240px;
+  border: 3px solid #333;
+}
+ 
+.entry-title {
+  margin: 8px;
+}
+ 
+.entry-img {
+  margin: 0 8px;
+}
+ 
+.entry-img img {
+  width: 100%;
+}
+ 
+.entry-category-item {
+  margin: 8px;
+  padding: 8px;
+  list-style-type: none;
+  background-color: #99c5d0;
+  color: #fff;
+  display: inline-block;
+}
+ 
+.entry-text {
+  margin: 8px;
+}
+ 
+.entry-container {
+  padding: 16px 0;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+.flex-container {
+  margin: 18px;
+  height: 500px;
+  display: flex;
+  gap: 18px;
+  background-color: rgb(95, 152, 162);
+  justify-content: center;
+}
+.column {
+  flex-direction: column;
+}
+.flex-item {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(136, 204, 227);
+}
+.entry-card {
+  padding: 16px;
+  display: grid;
+  grid-template:
+    "entry-card-img entry-card-title" auto
+    "entry-card-img entry-card-description" 1fr
+    "entry-card-img entry-card-more" auto
+    / 300px 1fr;
+  row-gap: 8px;
+  column-gap: 16px;
+}
+/*gap：真ん中の空白*/
+/*templateで決めた位置の配置をgrid-areaで指定する*/
+.entry-card-img {
+  grid-area: entry-card-img;
+}
+.entry-card-img img {
+  width: 100%;
+}
+.entry-card-title {
+  grid-area: entry-card-title;
+}
+.entry-card-description {
+  grid-area: entry-card-description;
+}
+.entry-card-more a {
+  grid-area: entry-card-more;
+  padding: 16px;
+ 
+  display: block;
+  background-color: #74c3d5;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px; /*border-radius:ボタンの角丸くするタグ*/
+  min-width: 50px;
+  text-align: center;
+}
+.entry-card-more a:hover {
+  background-color: #20ecff; /*カーソルを合わせると色が変わる*/
+}
+.fixed a {
+  width: 50%;
+  position: fixed;
+  bottom: 20px;
+  left: 30px;
+  background-color: rgb(255, 0, 153);
+  padding: 16px;
+  z-index: 1; /*数が大きければ大きいほど重ね順が上になる*/
+}
+.fixed a {
+  color: #ffffff;
+} /*固定されたところの文字の色変えられる*/
+.relative {
+  position: relative;
+  bottom: -20px;
+  left: 100px;
+  background-color: rgb(255, 0, 0);
+  width: 100px;
+  height: 100px;
+  color: #ffffff;
+  padding: 16px;
+}
+.absolutewapper {
+  position: relative;
+  height: 200px;
+}
+.absolute {
+  position: absolute;
+  background-color: blue;
+  top: 20px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  padding: 16px;
+}
+.new {
+  position: absolute;
+  background-color: yellow;
+  padding: 20px;
+  border-radius: 50%;
+  top: -10px;
+  right: -10px;
+  color: #ff0000;
+}
+ 
+ 

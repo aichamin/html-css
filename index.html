@@ -7,30 +7,30 @@
     <link rel="stylesheet" href="./css/common.css">
   </head>
   <body>
-    <header class="header">
-      <h1 class="header-title">htmlとcssについて</h1>
+    <header>
+      <h1>htmlとcssについて</h1>
     </header>
-
+ 
     <main>
       <article>
         <h2 class="main-title">HTMLについて</h2>
-        <p class="main-text">ハイパーテキストマークアップランゲージ</p>
-        <p class="main-text">文章構造を表す言語</p>
-
+        <p class="content-item-text">ハイパーテキストマークアップランゲージ</p>
+        <p class="content-item-text">文章構造を表す言語</p>
+ 
         <section class="content-item">
           <h3 class="content-item-title">h1 見出しタグ</h3>
           <p class="content-item-text">h1 ~ h6まであります</p>
         </section>
-
+ 
         <section class="content-item">
           <h3 class="content-item-title">p 段落</h3>
           <p class="content-item-text">文章の段落を表す</p>
         </section>
-
+ 
         <section class="content-item">
           <h3 class="content-item-title">ul,ol,li リスト</h3>
           <p class="content-item-text">リストを表すタグ</p>
-
+ 
           <section class="content-child-item">
             <h4 class="content-child-item-title">ul</h4>
             <p class="content-item-text">順番が関係ないリスト</p>
@@ -40,7 +40,7 @@
               <li>リスト3</li>
             </ul>
           </section>
-
+ 
           <section class="content-child-item">
             <h4 class="content-child-item-title">ol</h4>
             <p class="content-item-text">順番付きリスト</p>
@@ -51,10 +51,10 @@
             </ol>
           </section>
         </section>
-
+ 
         <section class="content-item">
           <h3 class="content-item-title">dl 定義付きリスト</h3>
-
+ 
           <dl>
             <dt>タイトル1</dt>
             <dd>タイトル1に対しての定義・説明</dd>
@@ -64,98 +64,119 @@
             <dd>タイトル2に対しての定義・説明 複数かける</dd>
           </dl>
         </section>
-
+ 
         <section class="content-item">
           <h3 class="content-item-title">em, strong</h3>
-          <p>emが強調を表す strongが強い重要性を表す</p>
-          <p>emは<em>強調</em>を表す</p>
-          <p>strongは<strong>重要性</strong>を表す</p>
+          <p class="content-item-text">
+            emが強調を表す strongが強い重要性を表す
+          </p>
+          <p class="content-item-text">emは<em>強調</em>を表す</p>
+          <p class="content-item-text">strongは<strong>重要性</strong>を表す</p>
         </section>
-
+ 
         <section class="content-item">
           <h3 class="content-item-title">div, span</h3>
           <p class="content-item-text">特に意味合いを持たないタグ</p>
-
+ 
           <div>
-            <p>タグをグループ化する</p>
-            <p>タグをグループ化する</p>
+            <p class="content-item-text">タグをグループ化する</p>
+            <p class="content-item-text">タグをグループ化する</p>
           </div>
           <p class="content-item-text">
             強調する必要はないが見た目を変えたい場合などに<span>span</span>を使う
           </p>
         </section>
-
+ 
         <section class="content-item">
           <h3 class="content-item-title">img 画像を貼る</h3>
           <img
-            src="https://thumb.photo-ac.com/fa/fa97e4244605c650681207714f9e32c3_t.jpeg"
+            src=https://thumb.photo-ac.com/fa/fa97e4244605c650681207714f9e32c3_t.jpeg
           />
         </section>
-
+ 
         <section class="content-item">
           <h3 class="content-item-title">a リンク</h3>
-          <a href="https://google.com/">Google</a>
-        </article>
+          <a href=https://google.com>Google</a>
+        </section>
       </article>
-
+ 
       <article>
-        <h2 class="main-title">CSSについて</h2>
+        <h2 class="main-title">cssについて</h2>
         <p class="main-text">Cascading Style Sheets</p>
-        
-        <section class="content-item">
-          <h3 class="content-item-title">メニュー</h3>
-
-          <p class="content-item-text"><a href="https://www.webcreatorbox.com/tech/css-flexbox-cheat-sheet">Flexbox チートシート</a></p>
-
+        <section class="menu-item">
+          <p class="content-item-title">メニュー</p>
+          <p>
+            <a href=https://www.webcreatorbox.com/tech/css-flexbox-cheat-sheet
+              >Flexbox チートシート</a
+            >
+          </p>
           <ul class="menu">
-            <li class="menu-list"><a href="">X</a></li>
-            <li class="menu-list"><a href="">Instagram</a></li>
-            <li class="menu-list"><a href="">Facebook</a></li>
+            <li class="menu-list"><a href=https://x.com/>x</a></li>
+            <li class="menu-list">
+              <a href=https://www.instagram.com>Instagram</a>
+            </li>
+            <li class="menu-list">
+              <a href=https://ja-jp.facebook.com/>Facebook</a>
+            </li>
           </ul>
         </section>
-
         <section class="content-item">
-          <h3 class="content-item-title">marginとpaddingとborderと幅について</h3>
-          <p class="content-item-text">基本的にはwidth + padding + borderの大きさになる</p>
-          <p class="content-item-text">ただしborder-sizing: border-box;が指定されてる場合はwidthの幅になる。（widthの内側にborderとpaddingが入る）</p>
-          <img src="./img/padding-border.png" alt="paddingとborderの関係">
-          
-          <p class="content-item-text">下記のように全てのタグに対して当てちゃっても良い。</p>
+          <h3 class="content-item-title">
+            marginとpaddingとborderと幅について
+          </h3>
+          <p class="content-item-text">
+            基本的にはwidth + padding + borderの大きさになる
+          </p>
+          <p class="content-item-text">
+            ただしborder-sizing:
+            border-box;が指定されてる場合はwidthの幅になる。（widthの内側にborderとpaddingが入る）
+          </p>
+          <p class="content-item-text">
+            下記のように全てのタグに対して当てちゃっても良い。
+          </p>
           <pre>
-* {
-  box-sizing: border-box;
-}
+            *{ box-sizing: border-box; }
           </pre>
           <p class="box1">テキスト</p>
           <p class="box2">テキスト</p>
         </section>
-
         <section class="content-item">
           <h3 class="content-item-title">記事</h3>
-
+ 
           <div class="entry-container">
             <section class="entry">
               <h4 class="entry-title"><a href="">タイトル</a></h4>
               <p class="entry-img">
-                <img src="https://aipict.com/wp-content/uploads/2022/09/sky02.png" alt="">
+                <img
+                  src=https://aipict.com/wp-content/uploads/2022/09/sky02.png
+                  alt=""
+                />
               </p>
               <ul class="entry-category">
                 <li class="entry-category-item">カテゴリー</li>
               </ul>
               <p class="entry-text">記事の説明</p>
-            </section>            <section class="entry">
+            </section>
+            <section class="entry">
               <h4 class="entry-title"><a href="">タイトル</a></h4>
               <p class="entry-img">
-                <img src="https://aipict.com/wp-content/uploads/2022/09/sky02.png" alt="">
+                <img
+                  src=https://aipict.com/wp-content/uploads/2022/09/sky02.png
+                  alt=""
+                />
               </p>
               <ul class="entry-category">
                 <li class="entry-category-item">カテゴリー</li>
               </ul>
               <p class="entry-text">記事の説明</p>
-            </section>            <section class="entry">
+            </section>
+            <section class="entry">
               <h4 class="entry-title"><a href="">タイトル</a></h4>
               <p class="entry-img">
-                <img src="https://aipict.com/wp-content/uploads/2022/09/sky02.png" alt="">
+                <img
+                  src=https://aipict.com/wp-content/uploads/2022/09/sky02.png
+                  alt=""
+                />
               </p>
               <ul class="entry-category">
                 <li class="entry-category-item">カテゴリー</li>
@@ -164,41 +185,75 @@
             </section>
           </div>
         </section>
-
-        <section class="content-item">
-          <h3 class="content-item-title">flexでの真ん中よせ</h3>
-          <p class="entry-text">justify-content: center;かalign-items: center;を使う</p>
-          <p class="entry-text">ただし注意が必要で、flex-directionの方向によって、方向変わる</p>
-          <div class="flex-container column"><!-- class複数 半角スペースで-->
+ 
+        <section>
+          <h3>flexでの真ん中よせ</h3>
+          <p class="entry-text">
+            justify-content: center;かalign-items: center;を使う
+          </p>
+          <p class="entry-text">
+            ただし注意が必要で、flex-directionの方向によって、方向変わる
+          </p>
+ 
+          <div class="flex-container column">
+            <!--class半角スペースで複数作れる-->
             <div class="flex-item">1</div>
             <div class="flex-item">2</div>
             <div class="flex-item">3</div>
           </div>
-          <div class="flex-container">
+          <div class="flex-container row">
             <div class="flex-item">1</div>
             <div class="flex-item">2</div>
             <div class="flex-item">3</div>
           </div>
         </section>
-
         <section class="content-item">
           <h3 class="content-item-title">gridの使い方</h3>
-          <p class="entry-text"></p>
-
           <article class="entry-card">
             <figure class="entry-card-img">
-              <img src="https://aipict.com/wp-content/uploads/2022/09/sky02.png" alt="">
+              <img
+                src=https://aipict.com/wp-content/uploads/2022/09/sky02.png
+                alt=""
+              />
             </figure>
-            <h4 class="entry-card-title"><a href="">記事タイトル</a></h4>
+            <h4 class="entry-card-title">記事タイトル</h4>
             <p class="entry-card-description">この記事の説明</p>
             <p class="entry-card-more"><a href="">続きを読む</a></p>
           </article>
         </section>
+        <section class="content-item">
+          <h3 class="content-item-title">positionの使い方</h3>
+          <section>
+            <h4>fixed</h4>
+            <p>windowの特定の位置に固定</p>
+            <div class="fixed">
+              <a href="#">ページトップへ</a>
+              固定されたコンテンツ
+            </div>
+          </section>
+
+          <section>
+            <h4>relative</h4>
+            <p>相対位置、下の位置からどのくらいの地点に配置するか</p>
+            <div class="relative">relativ コンテンツ</div>
+          </section>
+
+          <section>
+            <h4>absolute</h4>
+            <p>絶対位置</p>
+            <div class="absolutewapper">
+              <div class="absolute">absolute コンテンツ</div>
+              <p class="new">NEW</p>
+            </div>
+          </section>
+        </section>
       </article>
     </main>
-
+ 
     <footer>
       <p>&copy; copyright kamem</p>
     </footer>
   </body>
 </html>
+ 
+ 
